@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/Levix/vite-plugin-inject-css-to-js/compare/vite-plugin-inject-css-to-js@0.0.3...vite-plugin-inject-css-to-js@0.0.4) (2023-07-17)
+
+
+### Features
+
+* update comment ([ed614dd](https://github.com/Levix/vite-plugin-inject-css-to-js/commit/ed614dde6ee5682cc9e10bc56c2d8e1a799dd9d9))
+* update peerDependencies ([1aa8f53](https://github.com/Levix/vite-plugin-inject-css-to-js/commit/1aa8f5374a4556bd7aa22cc3b731387307404464))
+
 ### [0.0.3](https://github.com/Levix/vite-plugin-inject-css-to-js/compare/vite-plugin-inject-css-to-js@0.0.2...vite-plugin-inject-css-to-js@0.0.3) (2023-07-17)
 
 
