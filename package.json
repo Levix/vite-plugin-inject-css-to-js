@@ -1,0 +1,59 @@
+{
+    "name": "vite-plugin-inject-css-to-js",
+    "version": "0.0.0",
+    "description": "Combine this with the Vite build.cssCodeSplit CSS code splitting capability to build css into individual js files instead of using css links.",
+    "homepage": "https://github.com/Levix/vite-plugin-inject-css-to-js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Levix/vite-plugin-inject-css-to-js.git"
+    },
+    "bugs": {
+      "url": "https://github.com/Levix/vite-plugin-inject-css-to-js/issues"
+  },
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "typings": "./dist/index.d.ts",
+    "scripts": {
+        "preinstall": "npx only-allow pnpm",
+        "prepare": "husky install",
+        "build": "tsc && vite build",
+        "release-major": "standard-version -t vite-plugin-inject-css-to-js@ --release-as major && git push --follow-tags origin main && npm publish",
+        "release-minor": "standard-version -t vite-plugin-inject-css-to-js@ --release-as minor && git push --follow-tags origin main && npm publish",
+        "release-patch": "standard-version -t vite-plugin-inject-css-to-js@ --release-as patch && git push --follow-tags origin main && npm publish"
+    },
+    "keywords": [
+        "vite",
+        "vite4",
+        "vite-plugin",
+        "vite-plugin-inject-css-to-js"
+    ],
+    "author": "Levix",
+    "license": "MIT",
+    "devDependencies": {
+        "@commitlint/cli": "^17.6.6",
+        "@commitlint/config-conventional": "^17.6.6",
+        "@rollup/plugin-typescript": "^11.1.2",
+        "@types/clean-css": "^4.2.6",
+        "@types/node": "^20.4.2",
+        "husky": "^8.0.3",
+        "lint-staged": "^13.2.3",
+        "prettier": "^3.0.0",
+        "rollup": "^3.26.2",
+        "rollup-plugin-typescript-paths": "^1.4.0",
+        "standard-version": "^9.5.0",
+        "tsup": "^7.1.0",
+        "typescript": "^5.1.6",
+        "vite": "4.3.9"
+    },
+    "lint-staged": {
+        "**/*.{js,ts,vue,jsx,tsx}": [
+            "prettier --write"
+        ]
+    },
+    "dependencies": {
+        "clean-css": "^5.3.2"
+    },
+    "peerDependencies": {
+        "vite": ">=3.0.0"
+    }
+}
