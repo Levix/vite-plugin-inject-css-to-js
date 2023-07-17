@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/Levix/vite-plugin-inject-css-to-js/compare/vite-plugin-inject-css-to-js@0.0.2...vite-plugin-inject-css-to-js@0.0.3) (2023-07-17)
+
+
+### Bug Fixes
+
+* checkIsSkip logic error ([4a0097b](https://github.com/Levix/vite-plugin-inject-css-to-js/commit/4a0097b4a13c6bb5bc0075aab296df36261578e5))
+
 ### [0.0.2](https://github.com/Levix/vite-plugin-inject-css-to-js/compare/vite-plugin-inject-css-to-js@0.0.1...vite-plugin-inject-css-to-js@0.0.2) (2023-07-17)
 
 
