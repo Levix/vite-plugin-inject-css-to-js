@@ -42,10 +42,10 @@ export function InjectCssToJsPlugin(): Plugin {
 
     // 检查是否跳过
     const checkIsSkip = () => {
-        logger.warn(
-            `The 'cssCodeSplit' option is set to true in the 'build' configuration of userConfig, which is not supported by this plugin, so it is skipped.`,
-        );
         if (buildConfig?.cssCodeSplit === false) {
+            logger.warn(
+                `The 'cssCodeSplit' option is set to true in the 'build' configuration of userConfig, which is not supported by this plugin, so it is skipped.`,
+            );
             isSkip = true;
         }
     };
