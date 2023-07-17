@@ -1,6 +1,6 @@
 # vite-plugin-inject-css-to-js
 
-Combine this with the **[Vite3+](https://vitejs.dev/)** build.cssCodeSplit CSS code splitting capability to build css into individual js files instead of using css links.
+Combine this with the **[Vite 3+](https://vitejs.dev/)** build.cssCodeSplit CSS code splitting capability to build css into individual js files instead of using css links.
 
 ## Install
 
