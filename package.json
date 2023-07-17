@@ -1,6 +1,6 @@
 {
     "name": "vite-plugin-inject-css-to-js",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Combine this with the Vite build.cssCodeSplit CSS code splitting capability to build css into individual js files instead of using css links.",
     "homepage": "https://github.com/Levix/vite-plugin-inject-css-to-js",
     "repository": {
@@ -8,8 +8,8 @@
         "url": "git+https://github.com/Levix/vite-plugin-inject-css-to-js.git"
     },
     "bugs": {
-      "url": "https://github.com/Levix/vite-plugin-inject-css-to-js/issues"
-  },
+        "url": "https://github.com/Levix/vite-plugin-inject-css-to-js/issues"
+    },
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",
     "typings": "./dist/index.d.ts",
