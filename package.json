@@ -13,6 +13,9 @@
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",
     "typings": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "preinstall": "npx only-allow pnpm",
         "prepare": "husky install",
