@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/Levix/vite-plugin-inject-css-to-js/compare/vite-plugin-inject-css-to-js@0.0.6...vite-plugin-inject-css-to-js@0.0.7) (2023-07-18)
+
+
+### Features
+
+* update rollupOptions.external and minify ([b342302](https://github.com/Levix/vite-plugin-inject-css-to-js/commit/b3423026fc1fae99eab18db8a8964c963a8f5c7f))
+
 ### [0.0.6](https://github.com/Levix/vite-plugin-inject-css-to-js/compare/vite-plugin-inject-css-to-js@0.0.5...vite-plugin-inject-css-to-js@0.0.6) (2023-07-18)
 
 
