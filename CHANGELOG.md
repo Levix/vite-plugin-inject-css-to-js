@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/Levix/vite-plugin-inject-css-to-js/compare/vite-plugin-inject-css-to-js@1.0.0...vite-plugin-inject-css-to-js@1.0.1) (2023-07-18)
+
+
+### Bug Fixes
+
+* dist folder loss problem ([5d2e64b](https://github.com/Levix/vite-plugin-inject-css-to-js/commit/5d2e64b235d3ae2e62851e7446355c196a5e0154))
+
 ## [1.0.0](https://github.com/Levix/vite-plugin-inject-css-to-js/compare/vite-plugin-inject-css-to-js@0.0.8...vite-plugin-inject-css-to-js@1.0.0) (2023-07-18)
 
 
