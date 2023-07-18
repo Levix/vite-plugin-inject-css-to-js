@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/Levix/vite-plugin-inject-css-to-js/compare/vite-plugin-inject-css-to-js@0.0.8...vite-plugin-inject-css-to-js@1.0.0) (2023-07-18)
+
+
+### Features
+
+* create LICENSE ([c51df74](https://github.com/Levix/vite-plugin-inject-css-to-js/commit/c51df74dfd1847930c9882228bec402a0df45b1a))
+
 ### [0.0.8](https://github.com/Levix/vite-plugin-inject-css-to-js/compare/vite-plugin-inject-css-to-js@0.0.7...vite-plugin-inject-css-to-js@0.0.8) (2023-07-18)
 
 
