@@ -19,8 +19,12 @@ export function InjectCssToJsPlugin(): Plugin {
     // Compress css (not just minimise it), remove same class names, attributes, etc.
     const compressCss = (chunk: OutputChunk, cssCode: string) => {
         let processedCssCode = cssCode;
+        let moduleIds = chunk.moduleIds;
+        if (!moduleIds) {
+            moduleIds = Object.keys(chunk.modules);
+        }
         // chunk module from node_modules, no css compression required.
-        const isFromNodeModules = chunk.moduleIds.filter(id => id.includes('node_modules')).length;
+        const isFromNodeModules = moduleIds.filter(id => id.includes('node_modules')).length;
         if (!isFromNodeModules) {
             try {
                 const output = new CleanCSS({
