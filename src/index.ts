@@ -60,8 +60,8 @@ export function InjectCssToJsPlugin(): Plugin {
         },
 
         transformIndexHtml: {
-            order: 'post',
-            handler: function (html, ctx) {
+            enforce: 'post',
+            transform: function (html, ctx) {
                 if (isSkip) {
                     return html;
                 }
