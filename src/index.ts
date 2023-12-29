@@ -3,7 +3,11 @@ import type { BuildOptions, Plugin } from 'vite';
 import { createLogger } from 'vite';
 import CleanCSS from 'clean-css';
 
-export function InjectCssToJsPlugin(): Plugin {
+export function InjectCssToJsPlugin({
+    beforeInjectCss,
+}: {
+    beforeInjectCss?: (cssCode: string) => string | Promise<string>;
+} = {}): Plugin {
     const logger = createLogger();
 
     let buildConfig: BuildOptions | undefined;
@@ -143,9 +147,19 @@ export function InjectCssToJsPlugin(): Plugin {
                             }
                         } else {
                             const initialCode = chunk.code;
+                            const originalCssCode = cssCode;
+                            if (cssCode && typeof beforeInjectCss === 'function') {
+                                cssCode = await beforeInjectCss(cssCode);
+                            }
+                            if (!cssCode || typeof cssCode !== 'string') {
+                                logger.warn(
+                                    `The beforeInjectCss hook returns content that is not a string or is empty, reverting to the original content.`,
+                                );
+                                cssCode = JSON.stringify(originalCssCode.trim());
+                            }
                             chunk.code =
                                 `(function(){ try {var elementStyle = document.createElement('style'); elementStyle.appendChild(document.createTextNode(` +
-                                `${JSON.stringify(cssCode.trim())}` +
+                                `${cssCode}` +
                                 `));document.head.appendChild(elementStyle);} catch(e) {console.error('style-injected-by-js', e);} })(); ` +
                                 `${initialCode}`;
                         }
