@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/Levix/vite-plugin-inject-css-to-js/compare/vite-plugin-inject-css-to-js@1.0.1...vite-plugin-inject-css-to-js@1.1.0) (2023-12-29)
+
+
+### Features
+
+* add beforeInjectCss hook ([e2dde32](https://github.com/Levix/vite-plugin-inject-css-to-js/commit/e2dde326162254bb23e372aa77c22d0534dd79e3))
+
 ### [1.0.1](https://github.com/Levix/vite-plugin-inject-css-to-js/compare/vite-plugin-inject-css-to-js@1.0.0...vite-plugin-inject-css-to-js@1.0.1) (2023-07-18)
 
 
