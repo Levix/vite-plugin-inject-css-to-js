@@ -32,6 +32,29 @@ export default defineConfig({
 });
 ```
 
+Supports using the 'beforeInjectCss' hook to customize the return of your CSS code, such as in cases where a custom CDN domain exists.
+
+```ts
+// vite.config.js
+import { defineConfig } from 'vite';
+
+// 1. import the plugin
+import { InjectCssToJsPlugin } from 'vite-plugin-inject-css-to-js';
+
+export default defineConfig({
+    plugins: [
+        // 2. add it to the plugins list
+        InjectCssToJsPlugin({
+            beforeInjectCss: cssCode => {
+                return JSON.stringify(cssCode)
+                    .replace(/\/static\/images/g, '${window.cdnDomain}/static/images')
+                    .replace(/^"|"$/g, '`');
+            },
+        }),
+    ],
+});
+```
+
 ## Q&A
 
 ### Why can't I build all css files into js?
