@@ -39,7 +39,7 @@ devDependencies:
     version: 4.9.5
   rollup-plugin-typescript-paths:
     specifier: ^1.4.0
-    version: 1.4.0(typescript@5.1.6)
+    version: 1.5.0(typescript@5.1.6)
   standard-version:
     specifier: ^9.5.0
     version: 9.5.0
@@ -2426,8 +2426,8 @@ packages:
     resolution: {integrity: sha512-V2hovdzFbOi77/WajaSMXk2OLm+xNIeQdMMuB7icj7bk6zi2F8GGAxigcnDFpJHbNyNcgyJDiP+8nOrY5cZGrA==}
     dev: true
 
-  /rollup-plugin-typescript-paths@1.4.0(typescript@5.1.6):
-    resolution: {integrity: sha512-6EgeLRjTVmymftEyCuYu91XzY5XMB5lR0YrJkeT0D7OG2RGSdbNL+C/hfPIdc/sjMa9Sl5NLsxIr6C/+/5EUpA==}
+  /rollup-plugin-typescript-paths@1.5.0(typescript@5.1.6):
+    resolution: {integrity: sha512-zly2aiGNjYJNq5YUi6eyGrQnCYUQ8b5czOtHZIGriwG9U3Ba2F9hlSklafXCdsNulK/IlNmE0Kzj0h+fVV32pA==}
     peerDependencies:
       typescript: '>=3.4'
     dependencies:
