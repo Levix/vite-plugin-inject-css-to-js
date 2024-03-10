@@ -21,7 +21,7 @@ devDependencies:
     version: 11.1.6(rollup@4.9.5)(typescript@5.1.6)
   '@types/clean-css':
     specifier: ^4.2.6
-    version: 4.2.6
+    version: 4.2.11
   '@types/node':
     specifier: ^20.4.2
     version: 20.4.2
@@ -641,8 +641,8 @@ packages:
     dev: true
     optional: true
 
-  /@types/clean-css@4.2.6:
-    resolution: {integrity: sha512-Ze1tf+LnGPmG6hBFMi0B4TEB0mhF7EiMM5oyjLDNPE9hxrPU0W+5+bHvO+eFPA+bt0iC1zkQMoU/iGdRVjcRbw==}
+  /@types/clean-css@4.2.11:
+    resolution: {integrity: sha512-Y8n81lQVTAfP2TOdtJJEsCoYl1AnOkqDqMvXb9/7pfgZZ7r8YrEyurrAvAoAjHOGXKRybay+5CsExqIH6liccw==}
     dependencies:
       '@types/node': 20.4.2
       source-map: 0.6.1
