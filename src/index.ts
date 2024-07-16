@@ -16,7 +16,7 @@ export function InjectCssToJsPlugin({
     const cssSourceMap: Map<string, string> = new Map();
 
     // external links css tags collection
-    const cssTags: Set<string> = new Set();
+    const cssTags: { [key: string]: Set<string> } = {};
 
     let isSkip = false;
 
@@ -96,7 +96,10 @@ export function InjectCssToJsPlugin({
                 };
                 if (ctx.chunk?.type === 'chunk' && ctx.chunk.isEntry) {
                     getCssTagsForChunk(ctx.chunk).forEach(cssTag => {
-                        cssTags.add(cssTag.filename);
+                        if (!cssTags[ctx.chunk.filename]) {
+                            cssTags[ctx.chunk.filename] = new Set();
+                        }
+                        cssTags[ctx.chunk.filename].add(cssTag.filename);
                     });
                 }
                 return html;
@@ -140,7 +143,7 @@ export function InjectCssToJsPlugin({
                         }
                         cssCode = compressCss(chunk, cssCode);
                         // If the match can not be written directly to the js file, but should manually create a css file, so that the html file inside the css external links can be accessed normally!
-                        if (cssTags.has(cssId)) {
+                        if (cssTags[chunk.filename]?.has(cssId)) {
                             if (!emittedFileList.includes(cssId)) {
                                 emittedFileList.push(cssId);
                                 this.emitFile({ type: 'asset', fileName: cssId, source: cssCode });
